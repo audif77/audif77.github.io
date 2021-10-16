@@ -1,0 +1,424 @@
+@font-face {
+    font-family: 'odibee';
+    src: url(../font/OdibeeSans-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+body{
+    font-family: odibee;
+    font-weight: 100;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #151515;
+    padding-left: 1%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.content-upper{
+    margin-top: 120px;
+}
+
+.navigation{
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn{
+    background-color: transparent;
+    padding: 1px;
+    margin-left: 14px;
+    border: none;
+}
+
+.dropbtn img.img-main{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 15px;
+    height: 15px;
+    transform: rotate(180deg);
+    opacity: 1;
+}
+
+.dropbtn img.img-hover{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    transform: rotate(180deg);
+    top: 0;
+    bottom: 0px;
+    left: 15px;
+    right: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    background-color: #151515;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.drop-content a{
+    font-size: 20pt;
+    color: white;
+    padding: 16px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-content a:hover{
+    background-color:burlywood;
+}
+
+.navigation:hover .drop-content{
+    display: block;
+}
+
+.navigation:hover .dropbtn img.img-hover{
+    opacity: 1;
+}
+
+.navigation:hover .dropbtn img.img-main{
+    opacity: 0;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.carousel{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    width: 400%;
+    transition: all 0.3s;
+}
+
+.slider img{
+    width: 100%;
+    height: auto;
+}
+
+.slider section{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.controls .arrow{
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+}
+
+.controls .arrow:hover{
+    opacity: 50%;
+    transition: 0.2s;
+}
+
+.arrow.left{
+    left: -450px;
+    transform: rotate(180deg);
+}
+
+.arrow.left img{
+    height: 10%;
+    width: 10%;
+}
+
+.arrow.right{
+    right: -450px;
+}
+
+.arrow.right img{
+    height: 10%;
+    width: 10%;
+}
+
+.controls ul{
+    position: absolute;
+    bottom: 5%;
+    left:50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.controls ul li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin: 10px;
+    background: #333;
+    cursor: pointer;
+}
+
+.controls ul li.selected {
+    background: burlywood;
+}
+
+.controls ul li:hover{
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    transition: 0.3s;
+}
+
+.content-mid{
+
+    margin-left: 13%;
+}
+
+.content-lower{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 16%;
+    margin-right: 16%;
+}
+
+.info-img img{
+    width: 640px;
+    height: 360px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info{
+    margin-right: 10%;
+}
+
+h1{
+    font-size: 70pt;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 22pt;
+    font-weight: normal;
+}
+
+h3{
+    font-size: 22pt;
+    font-weight: normal;
+    color: grey;
+}
+
+.footer{
+    justify-content: center;
+    background-color: #151515;
+    margin-top: 100px;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer img{
+    width: 100px;
+    height: 100px;
+}
+
+.logo-social{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.fb img{
+    width: 40px;
+    height: 40px;
+}
+
+.ig img{
+    width: 40px;
+    height: 40px;
+}
+
+.tw img{
+    width: 40px;
+    height: 40px;
+}
+
+.yt img{
+    width: 40px;
+    height: 40px;
+}
+
+.dc img{
+    width: 40px;
+    height: 40px;
+}
+
+.tc img{
+    width: 40px;
+    height: 40px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+h4{
+    font-size: 12pt;
+    font-weight: normal;
+    color: grey;
+}
+
+.fb:hover img{
+    filter: brightness(50%);
+    transition: 0.1s;
+}
+
+.ig:hover img{
+    filter: brightness(50%);
+    transition: 0.1s;
+}
+
+.tw:hover img{
+    filter: brightness(50%);
+    transition: 0.1s;
+}
+
+.yt:hover img{
+    filter: brightness(50%);
+    transition: 0.1s;
+}
+
+.dc:hover img{
+    filter: brightness(50%);
+    transition: 0.1s;
+}
+
+.tc:hover img{
+    filter: brightness(50%);
+    transition: 0.1s;
+}
+
+@media(max-width: 1400px){
+    .content-lower{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .info-img img{
+        width: 100%;
+        height: auto;
+    }
+
+    .fb img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .ig img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .tw img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .yt img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .dc img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .tc img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .arrow.left{
+        left: -480px;
+    }
+
+    .arrow.left img{
+        height: 5%;
+        width: 5%;
+    }
+
+    .arrow.right{
+        right: -480px;
+    }
+
+    .arrow.right img{
+        height: 5%;
+        width: 5%;
+    }
+}
+
+@media(max-width: 500px){
+    h1{
+        font-size: 30pt;
+    }
+
+    .arrow.left{
+        left: -500px;
+    }
+
+    .arrow.left img{
+        height: 2%;
+        width: 2%;
+    }
+
+    .arrow.right{
+        right: -500px;
+    }
+
+    .arrow.right img{
+        height: 2%;
+        width: 2%;
+    }
+
+    .controls ul li{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .controls ul li:hover{
+        width: 20px;
+        height: 20px;
+    }
+
+    h2{
+        font-size: 15ptpt;
+    }
+    
+    h3{
+        font-size: 15pt;
+    }
+}

@@ -1,0 +1,447 @@
+@font-face {
+    font-family: 'odibee';
+    src: url(../font/OdibeeSans-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+body{
+    font-family: odibee;
+    font-weight: 100;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #151515;
+    padding-left: 1%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.navigation{
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn{
+    background-color: transparent;
+    padding: 1px;
+    margin-left: 14px;
+    border: none;
+}
+
+.dropbtn img.img-main{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 15px;
+    height: 15px;
+    transform: rotate(180deg);
+    opacity: 1;
+}
+
+.dropbtn img.img-hover{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    transform: rotate(180deg);
+    top: 0;
+    bottom: 0px;
+    left: 15px;
+    right: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    background-color: #151515;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.drop-content a{
+    font-size: 20pt;
+    color: white;
+    padding: 16px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-content a:hover{
+    background-color:burlywood;
+}
+
+.navigation:hover .drop-content{
+    display: block;
+}
+
+.navigation:hover .dropbtn img.img-hover{
+    opacity: 1;
+}
+
+.navigation:hover .dropbtn img.img-main{
+    opacity: 0;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.footer{
+    justify-content: center;
+    background-color: #151515;
+    margin-top: -4px;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer img{
+    width: 100px;
+    height: 100px;
+}
+
+.logo-social{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.fb img{
+    width: 40px;
+    height: 40px;
+}
+
+.ig img{
+    width: 40px;
+    height: 40px;
+}
+
+.tw img{
+    width: 40px;
+    height: 40px;
+}
+
+.yt img{
+    width: 40px;
+    height: 40px;
+}
+
+.dc img{
+    width: 40px;
+    height: 40px;
+}
+
+.tc img{
+    width: 40px;
+    height: 40px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+h4{
+    font-size: 12pt;
+    font-weight: normal;
+    color: grey;
+}
+
+.fb:hover img{
+    filter: brightness(50%);
+    transition: 0.1s;
+}
+
+.ig:hover img{
+    filter: brightness(50%);
+    transition: 0.1s;
+}
+
+.tw:hover img{
+    filter: brightness(50%);
+    transition: 0.1s;
+}
+
+.yt:hover img{
+    filter: brightness(50%);
+    transition: 0.1s;
+}
+
+.dc:hover img{
+    filter: brightness(50%);
+    transition: 0.1s;
+}
+
+.tc:hover img{
+    filter: brightness(50%);
+    transition: 0.1s;
+}
+
+.content{
+    margin-top: 120px;
+    box-sizing: border-box;
+    background-image: url("../images/regiswp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.content img{
+    width: 100%;
+    height: 100%;  
+}
+
+.allcontent{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.regis{
+    background-color: burlywood;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+}
+
+.regis h2{
+    font-size: 40px;
+    margin: 0;
+}
+
+.form{
+    padding: 30px 40px;
+    margin-right: 25px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-blok{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    margin-left: 5px;
+    font-size: 25px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-blok label{
+    margin-left: 5px;
+    font-size: 25px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control i1{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 45px;
+    right: -10px;
+    visibility: hidden;
+}
+
+.form-control i2{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 45px;
+    right: -10px;
+    visibility: hidden;
+}
+
+.form-control.success i1{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i2{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-blok span{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 10px;
+}
+
+.contain:hover{
+    cursor: pointer;
+}
+
+.gen:hover{
+    cursor: pointer;
+}
+
+.form button{
+    background-color: burlywood;
+    border: 2px solid burlywood;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    padding:  10px;
+    font-family: inherit;
+    font-size: 30px;
+    width: 105.5%;
+    cursor: pointer;
+}
+
+.form button:hover{
+    filter: brightness(85%);
+}
+
+.regis2{
+    background-color: burlywood;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+}
+
+.allcontent2{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 1000px;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.textplus{
+    margin : 10%
+}
+
+h5{
+    font-size: 70pt;
+    margin: 0;
+}
+
+h6{
+    font-size: 50pt;
+    font-weight: normal;
+    color: grey;
+    margin: 0;
+    
+}
+
+@media (max-width: 800px) {
+    .fb img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .ig img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .tw img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .yt img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .dc img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .tc img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .title{
+        top: 12%;
+    }
+
+    .regis{
+        display: flex;
+        justify-content: center;
+    }
+
+    .regis2{
+        display: flex;
+        justify-content: center;
+    }
+
+    h5{
+        font-size: 40pt;
+    }
+    
+}
+
+@media (max-width: 460px){
+    h5{
+        font-size: 20pt;
+    }
+
+    h6{
+        font-size: 20pt;
+    }
+}
